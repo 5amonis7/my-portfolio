@@ -33,7 +33,7 @@ const Nav = () => {
                 <FontAwesomeIcon className={menu ? "nav-icon open": "nav-icon"} icon={faConnectdevelop} />
                 
                 <div className={menu ? "nav-items open": "nav-items"}>
-                <NavLink onClick={ChangeShape} className={({ isActive }) => (isActive ? 'active nav-items_item' : 'nav-items_item')} to='/my-portfolio'>Home</NavLink>
+                <NavLink onClick={ChangeShape} className={({ isActive }) => (isActive ? 'active nav-items_item' : 'nav-items_item')} to='/'>Home</NavLink>
                 </div>
                 <div className={menu ? "nav-items open": "nav-items"}> 
                 <NavLink onClick={ChangeShape} className={({ isActive }) => (isActive ? 'active nav-items_item' : 'nav-items_item')} to='/about'>About Me</NavLink>
