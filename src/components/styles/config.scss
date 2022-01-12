@@ -1,0 +1,47 @@
+$black: #373a40;
+$grey: #686d76;
+$white: #EEEEEE;
+$blue: #19d3da;
+
+$main-font: 'Gentium Basic';
+$secondary-font: 'Fira Sans Condensed';
+$paragraph-font: 'Imprima';
+
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+@mixin transition-ease{
+    transition: all 0.5s ease-in-out;
+}
+@mixin display-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin display-flex-end{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@mixin display-flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin media-md{
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+@mixin media-lg{
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+@mixin media-xl{
+    @media screen and (min-width: 1600px){
+        @content;
+    }
+}
+

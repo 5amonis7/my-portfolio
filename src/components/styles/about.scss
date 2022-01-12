@@ -1,0 +1,50 @@
+.about{
+    height: 30vh;
+    width: 100%;
+    background:
+    linear-gradient(to top, rgba($black, 0.3), rgba($black, 0.9)),
+    url(./fotis-fotopoulos-DuHKoV44prg-unsplash.jpg) center top;
+    background-size: cover;
+    @include display-flex-end;
+    
+    
+    &-text{
+        position: absolute;
+        color: $blue;
+        font-family: $main-font;
+        font-style: italic;
+        font-weight: map-get($font-weights, "bold" );
+        font-size: 2.5rem;
+    }
+    &-me{
+        text-align: center;
+        padding: 20px;
+        background: $black;
+        @include display-flex-center;
+        overflow: hidden;
+        
+
+        &_text{
+            color: $white;
+            font-family: $paragraph-font;
+            font-weight: map-get($font-weights, "regular" );
+            font-size: 1.4rem;
+        }
+
+    }
+
+    &-icons{
+        font-size: 3rem;
+        
+        & a{
+            color: $white;
+            padding: 15px;
+        }
+    }
+}
+.about-me_line{
+    margin-top: 20px;
+    width: 60vw;
+    height: 5px;
+    background: $blue;
+}

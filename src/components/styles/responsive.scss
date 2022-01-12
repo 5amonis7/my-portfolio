@@ -1,0 +1,131 @@
+@include media-md{
+    .home{
+        &-phrase{
+            & h2{
+                font-size: 3rem;
+            }
+            &_name{
+                font-size: 3.5rem;
+            }
+            & h4{
+                font-size: 2rem;
+            }
+        }
+    }
+    .about{
+        &-text{
+            font-size: 4rem;
+        }
+        &-me{
+            &_text{
+                font-size: 2rem;
+                width: 70vw;
+            }
+        }
+        &-icons a{
+            font-size: 4rem;
+            padding: 2rem;
+        }
+    }
+    .resume{
+        &-title{
+            font-size: 2.5rem;
+        }
+        &-skills{
+            font-size: 1.5rem;
+        }
+    }
+    .card{
+        &-items{
+            grid-template-areas: "company none length" "Line Line Line";
+        }
+    }
+}
+
+@include media-lg{
+    .contact{
+        &-list{
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "email phone" "address address";
+            grid-gap: 2rem;
+        }
+        & h2{
+            font-size: 3rem;
+        }
+        &-title{
+            font-size: 2.5rem;
+        }
+    }
+    
+}
+
+@include media-xl{
+    .home{
+        &-phrase{
+            & h2{
+                font-size: 4rem;
+            }
+            &_name{
+                font-size: 4.5rem;
+            }
+        }
+    }
+    .about{
+        &-me{
+            &_text{
+                width: 50vw;
+                font-size: 2.5rem;
+            }
+        }
+    }
+    .card{
+        width: 50vw;
+    }
+    .resume{
+        &-skills{
+            position: absolute;
+            left: 15%;
+
+            & h2{
+                font-size: 3rem;
+            }
+            & p{
+                font-size: 2rem;
+            }
+        }
+        &-history{
+            padding-top: 20px;
+            margin-left: 20%;
+        }
+    }
+
+    .hamburger-btn{
+        display: none;
+    }
+    .nav{
+        box-shadow: 5px 0px 15px black;
+        position: fixed;
+        width: 10vw;
+
+        &-icon{
+            transform: translateX(0);
+        }
+
+        &.close{
+            height: 100vh;
+            width: 10vw;
+        }
+        &-items{
+            transform: translateX(0vw);
+            line-height: 8rem;
+        }
+        &items{
+            &.open{
+                transform: none;
+            }
+        }
+    }
+    .nav.nav-items.nav-items_item.open{
+        transform: none;
+    }
+}
