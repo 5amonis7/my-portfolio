@@ -39,6 +39,10 @@
         & a{
             color: $white;
             padding: 15px;
+
+            &:hover{
+                color: $blue;
+            }
         }
     }
 }
