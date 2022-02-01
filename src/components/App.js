@@ -5,6 +5,7 @@ import Nav from './nav';
 import About from './about';
 import Resume from './resume';
 import Contact from './contact';
+import Projects from './projects';
 import './styles/main.scss'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes> 
       </div>
   );

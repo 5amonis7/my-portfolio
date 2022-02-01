@@ -17,7 +17,7 @@
     z-index: 9;
 
     &-icon{
-        font-size: 5rem;
+        font-size: 100px;
         color: $blue;
         transform: translateX(100vw);
         @include transition-ease;
@@ -118,7 +118,7 @@
 }
 
 
-@for $i from 1 through 5{
+@for $i from 1 through 6{
     .nav-items:nth-child(#{$i}){
         transition-delay: ($i * 0.1s) +0.15s;
     }

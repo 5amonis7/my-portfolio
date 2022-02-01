@@ -43,6 +43,20 @@
 }
 
 @include media-lg{
+    .projects{
+        
+        &  h1{
+            font-size: 5rem;
+        }
+    }
+    .items{
+        margin-left: 5%;
+
+        &-item{
+            height: 50px;
+        }
+        
+    }
     .contact{
         &-list{
             grid-template-columns: 1fr 1fr;
