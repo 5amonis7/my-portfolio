@@ -20,7 +20,7 @@ const projects = () => {
                 </div>
 
                 <div className="items-item">
-                    <img src={require('./images/React App.png')} alt="password genie" />
+                    <img src={require('./images/React App (1).png')} alt="password genie" />
 
                     <p>This is a password generator to be use everytime you need a new password. You can also choose to download the password in a text file so you do not forget it.</p>
 
