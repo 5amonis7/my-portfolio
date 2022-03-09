@@ -31,8 +31,15 @@ const projects = () => {
 
                 </div>
 
-                <div className="items-item empty">
-                    <p>To Be<br /> Filled</p>
+                <div className="items-item">
+                    <img src={require('./images/Netflix - Watch TV Shows Online, Watch Movies Online.png')} alt="Netflix" />
+
+                    <p>This was a Netflix landing page I learned how to create to get a refresh on vanilla HTML, CSS and JavaScript. It is a one page website used to mimick Netflix's page.</p>
+
+                    <div>
+                        <button><a rel='noreferrer' target="_blank" href="https://5amonis7.github.io/netflix-landing-page/">Website</a></button>
+                        <button><a rel='noreferrer' target="_blank" href="https://github.com/5amonis7/netflix-landing-page">Github</a></button>
+                    </div>
                 </div>
 
             </div>
